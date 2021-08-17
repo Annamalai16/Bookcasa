@@ -23,7 +23,15 @@
         <br>
         <select class="input-field" name="category" required>
             <option value="" disabled selected hidden>Category</option>
-            <option style="color: black;" value="Hii">Hii</option>
+            <?php 
+            $sql = "SELECT name FROM category";
+            $result = $conn->query($sql);
+            if($result->num_rows>0){
+                while($row = $result->fetch_assoc()){ ?>
+                    <option style="color: black;" value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
+                <?php 
+                }
+            } ?>
         </select>
         <br><br>
         <input type="text" name="bookname" placeholder="Book Name" style="margin-left: 5px;" class="input-field" required>
