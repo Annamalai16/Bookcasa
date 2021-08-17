@@ -88,8 +88,7 @@
         <div id="top" class="callbacks_container">
             <ul class="rslides" id="slider3">
                 <li>
-                    <div class="banner one">
-
+                    <div class="banner front">
                         <div class="container">
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
@@ -100,7 +99,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="banner two">
+                    <div class="banner front1">
                         <div class="container">
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>

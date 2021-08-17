@@ -1,83 +1,4 @@
-<?php include('config/constants.php')?>
-<?php include('partials-front/login-check.php');?>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Home</title>
-    <!--fonts-->
-    <link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <!--//fonts-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/chocolat.css" rel="stylesheet">
-    <!-- for-mobile-apps -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Arts School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-    <script type="application/x-javascript">
-        addEventListener("load", function() {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- //for-mobile-apps -->
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- js -->
-    <script src="js/modernizr.custom.97074.js"></script>
-    <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1000);
-            });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-</head>
-
-<body>
-    <div class="header">
-        <div class="header-left">
-            <a href="index.html"><img src="images/logo.png" alt="" /><span>ARTS</span> SCHOOL</a>
-        </div>
-        <div class="header-right">
-            <span class="menu"><img src="images/menu.png" alt=""/></span>
-            <nav class="cl-effect-11" id="cl-effect-11">
-                <ul class="nav1">
-                    <li><a class="scroll" href="#home" data-hover="HOME">HOME</a></li>
-                    <li><a class="scroll" href="#about" data-hover="ABOUT">ABOUT</a></li>
-                    <li><a class="scroll" href="#services" data-hover="SERVICES">SERVICES</a></li>
-                    <li><a class="scroll" href="#team" data-hover="TEAM">TEAM</a></li>
-                    <li><a class="scroll" href="#gallery" data-hover="GALLERY">GALLERY</a></li>
-                    <li><a class="scroll" href="#contact" data-hover="CONTACT">CONTACT</a></li>
-                    <li><a class="scroll" href="#contact" data-hover="MY CART">MY CART</a></li>
-                    <li><a class="scroll" href="#" data-hover="LOGOUT" onclick="window.location.href='logout.php'">LOGOUT</a></li>
-                </ul>
-            </nav>
-            <!-- script for menu -->
-            <script>
-                $("span.menu").click(function() {
-                    $("ul.nav1").slideToggle(300, function() {
-                        // Animation complete.
-                    });
-                });
-            </script>
-            <!-- //script for menu -->
-        </div>
-        <div class="clearfix"></div>
-    </div>
+<?php include('partials-front/menu.php')?>
     <!-- banner-slider -->
     <div id="home" class="banner-slider">
         <!-- responsiveslides -->
@@ -111,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
                                 <h4><span>ARTS</span> SCHOOL</h4>
-                                <p>Make Your Life Beautiful</p>
+                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php'">ORDER NOW</button></p>
                             </div>
                         </div>
                     </div>
@@ -122,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
                                 <h4><span>ARTS</span> SCHOOL</h4>
-                                <p>Make Your Life Beautiful</p>
+                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php'">ORDER NOW</button></p>
                             </div>
                         </div>
                     </div>

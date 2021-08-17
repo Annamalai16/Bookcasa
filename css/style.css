@@ -372,6 +372,38 @@ background-size:cover;
 -moz-background-size: cover;
 min-height: 700px;
 }
+.banner.signup{
+	background:url(../images/bannersignup.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+}
+.banner.login{
+	background:url(../images/bannerlogin.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+}
+.banner.front{
+	background:url(../images/bannerfront.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+}
+.banner.front1{
+	background:url(../images/bannerfront1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+}
 .banner.one{
 background:url(../images/banner1.jpg) no-repeat 0px 0px;
 background-size:cover;

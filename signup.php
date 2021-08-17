@@ -67,7 +67,7 @@
         <div id="top" class="callbacks_container">
             <ul class="rslides" id="slider3">
                 <li>
-                  <div class="banner one">
+                  <div class="banner signup">
                         <div class="container">
                             <div class="banner-info" style="margin-top:150px;">
                                 <div class="container-fluid register"><!--register is the form box-->
