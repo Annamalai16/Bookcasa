@@ -82,13 +82,13 @@
                                         <img src="images/googlelogo.png" alt="googlelogo" srcset="">
                                     </div>
                                     <form id="user" class="input-group" method="post">
-                                        <input type="text" name="username" class="input-field" placeholder="User Id" required>
+                                        <input type="text" name="username" class="input-field" placeholder="User Name" required>
                                         <input type="email" name="email" class="input-field" placeholder="abc@xyz.com" required>
                                         <input type="text" name="password" class="input-field" placeholder="Enter Password" required>
                                         <input type="Submit" name="user" class="submit-btn" value="Login">
                                     </form>
                                     <form id="admin" class="input-group" method="post">
-                                        <input type="text" name="username1"class="input-field" placeholder="Admin Id" required style="background:none;"> 
+                                        <input type="text" name="username1"class="input-field" placeholder="Admin Name" required style="background:none;"> 
                                         <input type="email" name="email1" class="input-field" placeholder="abc@xyz.com" required>
                                         <input type="text" name="password1" class="input-field" placeholder="Enter Password" required>
                                         <input type="Submit" name="admin" class="submit-btn" value="Login" >

@@ -15,7 +15,7 @@
                         $image=$row['image'];
                     ?>
                     <div id="images">
-                        <a href="<?php echo SITEURL; ?>books.php?category_name=<?php echo $name; ?>">
+                        <a href="<?php echo SITEURL; ?>books.php?category_name=<?php echo $name; ?>&id=<?php echo $id; ?>">
                             <img class="effect" src="<?php echo SITEURL; ?>images/uploadedCategories/<?php echo $image; ?>" alt="<?php echo $name; ?>" >
                             <p id="imgcontent"><?php echo $name; ?></p>
                         </a>

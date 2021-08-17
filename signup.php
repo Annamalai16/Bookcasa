@@ -81,7 +81,7 @@
                                         <img src="images/googlelogo.png" alt="googlelogo" srcset="">
                                     </div>
                                     <form id="user" class="input-group" method="post">
-                                        <input type="text" name="username" class="input-field" placeholder="User Id" required>
+                                        <input type="text" name="username" class="input-field" placeholder="User Name" required>
                                         <input type="email" name="email" class="input-field" placeholder="abc@xyz.com" required>
                                         <input type="tel" name="phone" class="input-field" placeholder="+91**********" minlength="10" required>
                                         <input type="text" name="password" class="input-field" placeholder="Enter Password" required>
