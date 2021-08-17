@@ -26,4 +26,5 @@
             }
         ?>
 </div>
+<br><br><br>
 <?php include('partials-front/footer.php'); ?>
