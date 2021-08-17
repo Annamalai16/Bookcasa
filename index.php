@@ -47,7 +47,7 @@
 <body>
 <div class="header">
         <div class="header-left">
-            <a href="index.html"><img src="images/logo.png" alt="" /><span> BOOKCASA </a>
+            <a href="index.php"><img src="images/logo.png" alt="" /><span> BOOKCASA </a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="servc-grid-right">
                         <h4>Supreme packaging care</h4>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <p>We take utmost care to deliver the books without any damages</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -199,8 +199,8 @@
                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
-                        <h4>cum soluta nobis est eligendi optio cumque nihil cons</h4>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <h4>Hassle-free shopping</h4>
+                        <p>All books are available on a single website. If books are not available, mail us and books will be added within 2 weeks</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -209,8 +209,8 @@
                         <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
-                        <h4>cum soluta nobis est eligendi optio cumque nihil cons</h4>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <h4>24/7 customer service</h4>
+                        <p>Your satisfaction is all that matters. Any queries our customer service will back you up and make sure that you are satisfied with our services</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -221,9 +221,9 @@
     <!-- services -->
     <!-- team -->
     <!--start-teachers-->
-    <div id="team" class="team">
+    <div id="team" class="team" style="padding-left:20%;">
         <div class="container">
-            <h3 class="tittle">OUR TEAM</h3>
+            <h3 class="tittle" style="margin-left:-30%;">OUR TEAM</h3>
             <div class="main">
                 <div class="col-md-3 view-grid">
                     <div class="view fifth-effect">
@@ -243,138 +243,12 @@
                         <div class="mask"></div>
                     </div>
                 </div>
-                <div class="col-md-3 view-grid">
-                    <div class="view fifth-effect">
-                        <a href="#" title="Full Image"><img src="images/t4.jpg" alt="" /></a>
-                        <div class="mask"></div>
-                    </div>
-                </div>
                 <div class="clearfix"></div>
             </div>
         </div>
     </div>
 
     <!--//end-teachers-->
-    <!-- //team -->
-    <!-- gallery -->
-    <div class="gallery" id="gallery">
-        <div class="container">
-            <h3 class="tittle">GALLERY</h3>
-            <div class="gallery-bottom">
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g1.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g1.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g2.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g2.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g3.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g3.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g4.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g4.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g5.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g5.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g6.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g6.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g1.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g1.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g3.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g3.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 gal-grid">
-                    <div class="view view-fifth">
-                        <a href="images/g2.jpg" class="b-link-stripe b-animate-go  thickbox" title="Image Title"><img src="images/g2.jpg" alt="" class="img-responsive">
-                            <div class="mask">
-                                <h2>VOLUPTATIBUS</h2>
-                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <script src="js/jquery.chocolat.js"></script>
-
-            <!--light-box-files -->
-            <script type="text/javascript">
-                $(function() {
-                    $('.gallery a').Chocolat();
-                });
-            </script>
-
-        </div>
-    </div>
-    <!-- //gallery -->
     <!-- contact -->
     <div class="contact" id="contact">
         <div class="container">
