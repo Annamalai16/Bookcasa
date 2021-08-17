@@ -185,10 +185,10 @@
             if($count1==1){
                 $_SESSION['user1']=$username1;
                 while($row1=mysqli_fetch_assoc($res1)){
-                    $id1=$row1['id'];
+                    $id=$row1['id'];
                     ?>
                 <script>
-                    window.location.href="admin/index.php?id1=<?php echo $id1; ?>";
+                    window.location.href="admin/index.php?id=<?php echo $id; ?>";
                 </script>
                 <?php
                 break;
