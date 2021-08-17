@@ -1,5 +1,8 @@
 <?php include('config/constants.php')?>
 <?php include('login-check.php');?>
+<?php
+    $id=$_GET['id'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +14,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/chocolat.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Arts School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -43,13 +47,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
+    <!-- start-smoth-scrolling -->
+    <!--Added by user -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- start-smoth-scrolling -->
 </head>
 <body>
     <div class="header">
         <div class="header-left">
-            <a href="index.html"><img src="images/logo.png" alt="" /><span>ARTS</span> SCHOOL</a>
+            <a href="home.php?id=<?php echo $id; ?>" style="text-decoration:none;color:white;"><img src="images/logo.png" alt="" />ARTS SCHOOL</a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>

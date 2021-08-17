@@ -144,13 +144,11 @@
                 $_SESSION['user']=$username;
                 while($row=mysqli_fetch_assoc($res)){
                     $id=$row['id'];
-                    $_SESSION['ID']=$id;
                     ?>
                 <script>
-                    window.location.href="home.php";
+                    window.location.href="<?php echo SITEURL; ?>home.php?id=<?php echo $id; ?>";
                 </script>
                 <?php
-                break;
                 }
             }else{
             ?>

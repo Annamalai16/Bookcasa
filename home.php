@@ -31,8 +31,8 @@
                         <div class="container">
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
-                                <h4><span>ARTS</span> SCHOOL</h4>
-                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php'">ORDER NOW</button></p>
+                                <h4> ARTS SCHOOL</h4>
+                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php?id=<?php echo $id; ?>'">ORDER NOW</button></p>
                             </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                         <div class="container">
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
-                                <h4><span>ARTS</span> SCHOOL</h4>
-                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php'">ORDER NOW</button></p>
+                                <h4> ARTS SCHOOL</h4>
+                                <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'categories.php?id=<?php echo $id; ?>'">ORDER NOW</button></p>
                             </div>
                         </div>
                     </div>

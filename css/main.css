@@ -108,3 +108,30 @@ span {
 
 
 /*register ends*/
+/*category starts */
+#images{
+    margin-left:5%;
+}
+#images>a{
+    float:left;
+    margin:3% 3% 1% 5% ;
+    text-decoration: none;
+}
+.effect{
+    background-position:center;
+    width:300px !important;
+    height:400px !important;
+    border-radius:15px;
+}
+#imgcontent{
+    margin-top:2%;
+    color:#130f40;
+    font-family:'monospace';
+    font-size: large;
+    font-weight: bold;
+    text-align:center;
+}
+#images>a:hover{
+    opacity:0.5;
+}
+/*category ends */
