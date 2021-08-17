@@ -51,18 +51,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="header-left">
             <a href="index.html"><img src="images/logo.png" alt="" /><span>ARTS</span> SCHOOL</a>
         </div>
-        <div class="header-right" style="padding-left:2px;">
+        <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>
-            <nav class="cl-effect-11" id="cl-effect-11">
-                <ul class="nav1" style="font-size:10px;margin-right:1px;">
-                    <li><a class="scroll" href="#home" data-hover="HOME" style="margin-right:0px;">HOME</a></li>
-                    <li><a class="scroll" href="#about" data-hover="ABOUT" style="margin-right:0px;">ABOUT</a></li>
-                    <li><a class="scroll" href="#services" data-hover="SERVICES" style="margin-right:0px;">SERVICES</a></li>
-                    <li><a class="scroll" href="#team" data-hover="TEAM" style="margin-right:0px;">TEAM</a></li>
-                    <li><a class="scroll" href="#gallery" data-hover="GALLERY" style="margin-right:0px;">GALLERY</a></li>
-                    <li><a class="scroll" href="#contact" data-hover="CONTACT" style="margin-right:0px;">CONTACT</a></li>
-                    <li><a class="scroll" href="#" data-hover="ORDERHISTORY" style="margin-right:0px;">ORDERHISTORY</a></li>
-                    <li><a class="scroll" href="#" data-hover="MYCART" style="margin-right:0px;">MYCART</a></li>
+            <nav class="cl-effect-11" id="cl-effect-11" style="margin-left:18%;">
+                <ul class="nav1">
+                    <li><a class="scroll" href="#" data-hover="ORDERHISTORY" onclick="window.location.href='orderhistory.php'">ORDERHISTORY</a></li>
+                    <li><a class="scroll" href="#" data-hover="MYCART" onclick="window.location.href='mycart.php'">MYCART</a></li>
                     <li><a class="scroll" href="#" data-hover="LOGOUT" onclick="window.location.href='logout.php'" style="margin-right:0px;">LOGOUT</a></li>
                     <li style="float:right !important;padding-right:2%;"><i class='far fa-user-circle' style='font-size:24px;color:white;'></i><a class="scroll" href="#" data-hover="&nbsp;<?php echo $_SESSION['user']; ?>" style="margin-right:0px;margin-left:0px;">&nbsp;<?php echo $_SESSION['user']; ?></a></li>
                 </ul>
