@@ -57,7 +57,6 @@
                     <li><a class="scroll" href="#about" data-hover="ABOUT" style="margin-right:0px;">ABOUT</a></li>
                     <li><a class="scroll" href="#services" data-hover="SERVICES" style="margin-right:0px;">SERVICES</a></li>
                     <li><a class="scroll" href="#team" data-hover="TEAM" style="margin-right:0px;">TEAM</a></li>
-                    <li><a class="scroll" href="#gallery" data-hover="GALLERY" style="margin-right:0px;">GALLERY</a></li>
                     <li><a class="scroll" href="#contact" data-hover="CONTACT" style="margin-right:0px;">CONTACT</a></li>
                     <li style="float:right !important;"><a class="scroll" href="#" data-hover="LOGIN" onclick="window.location.href='login.php'">LOGIN</a></li>
                 </ul>
@@ -172,11 +171,11 @@
     <!-- services -->
     <div id="services" class="services1">
         <div class="container">
-            <h3>SERVICES</h3>
+            <h3>WHY CHOOSE US? </h3>
             <div class="servc-grids">
                 <div class="col-md-6 servc-grid">
                     <div class="servc-grid-left">
-                        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
                         <h4>Fastest delivery</h4>
@@ -186,7 +185,7 @@
                 </div>
                 <div class="col-md-6 servc-grid">
                     <div class="servc-grid-left">
-                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
                         <h4>Supreme packaging care</h4>
@@ -196,7 +195,7 @@
                 </div>
                 <div class="col-md-6 servc-grid">
                     <div class="servc-grid-left">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
                         <h4>Hassle-free shopping</h4>
@@ -206,7 +205,7 @@
                 </div>
                 <div class="col-md-6 servc-grid">
                     <div class="servc-grid-left">
-                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
                         <h4>24/7 customer service</h4>
