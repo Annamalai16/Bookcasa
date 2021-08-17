@@ -2,9 +2,9 @@
 
 .register {
     width: 380px;
-    height: 480px;
+    height: 500px;
     position: relative;
-    margin: 6% auto;
+    margin: 1% auto;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.55);
     color: whitesmoke;
@@ -76,7 +76,7 @@
 
 .submit-btn {
     width: 85%;
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;

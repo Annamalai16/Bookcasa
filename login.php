@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign up</title>
+    <title>login</title>
     <!--fonts-->
     <link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -72,8 +72,9 @@
                             <div class="banner-info" style="margin-top:150px;">
                                 <div class="container-fluid register"><!--register is the form box-->
                                     <div class="button-box">
-                                        <div style="top: 0;left: 0;position: absolute;width: 220px;height: 100%;background: rgb(37, 150, 190);border-radius: 30px;"></div>
-                                        <button type="button" class="toggle-btn" style="text-align:center;padding: 10px 72px;">Sign Up</button>
+                                        <div id="btn"></div>
+                                        <button type="button" class="toggle-btn" onclick="user()">User</button>
+                                        <button type="button" class="toggle-btn" onclick="admin()">Admin</button>
                                     </div>
                                     <div class="social-icons">
                                         <img src="images/fblogo.png" alt="fblogo" srcset="">
@@ -83,12 +84,37 @@
                                     <form id="user" class="input-group" method="post">
                                         <input type="text" name="username" class="input-field" placeholder="User Id" required>
                                         <input type="email" name="email" class="input-field" placeholder="abc@xyz.com" required>
-                                        <input type="tel" name="phone" class="input-field" placeholder="+91**********" minlength="10" required>
                                         <input type="text" name="password" class="input-field" placeholder="Enter Password" required>
-                                        <input type="Submit" name="user" class="submit-btn" value="Sign up">
+                                        <input type="Submit" name="user" class="submit-btn" value="Login">
+                                    </form>
+                                    <form id="admin" class="input-group" method="post">
+                                        <input type="text" name="username1"class="input-field" placeholder="Admin Id" required style="background:none;"> 
+                                        <input type="email" name="email1" class="input-field" placeholder="abc@xyz.com" required>
+                                        <input type="text" name="password1" class="input-field" placeholder="Enter Password" required>
+                                        <input type="Submit" name="admin" class="submit-btn" value="Login" >
                                     </form>
                                 </div>
                             </div>
+                            <script>
+                                var x = document.getElementById("user");
+                                var y = document.getElementById("admin");
+                                var z = document.getElementById("btn");
+                                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                                function admin(){
+                                    x.style.left="-400px";
+                                    y.style.left="50px";
+                                    if(width<=481){
+                                        z.style.left="50%"; 
+                                    }else{
+                                        z.style.left="110px";
+                                    }
+                                }
+                                function user(){
+                                    x.style.left="50px";
+                                    y.style.left="450px";
+                                    z.style.left="0px";
+                                }
+                            </script>
                         </div>
                     </div>
                 </li>
@@ -103,39 +129,89 @@
     if(isset($_POST['user'])){
         //1.processing data if button is clicked 
         $username=$_POST["username"];
-        $email=$_POST['email'];
-        $phone=$_POST['phone'];
+        $email=$_POST["email"];
         $password=$_POST["password"];
 
         //2.SQL Query to save data into database
-        $sql="INSERT INTO tbl_user SET 
-        username='$username',
-        email='$email',
-        phone='$phone',
-        password='$password'
-         ";
-        echo $sql;
+        $sql="SELECT * FROM tbl_user WHERE email='$email' AND password='$password' ";
+        
         //3.executing and saving data in database
         $res=mysqli_query($conn,$sql);
-
         //4.checking if we have inserted the data
-        if($res==True){
+        if($res==True){      
+            $count= mysqli_num_rows($res);
+            if($count==1){
+                $_SESSION['user']=$username;
+                while($row=mysqli_fetch_assoc($res)){
+                    $id=$row['id'];
+                    ?>
+                <script>
+                    window.location.href="home.php?id=<?php echo $id; ?>";
+                </script>
+                <?php
+                break;
+                }
+            }else{
+            ?>
+            <script>
+                alert("No such user Exist");
+                window.location.href='signup.php';
+            </script>
+            <?php
+            }
             //echo "Data Inserted";
             //redirecting page to manage admin
-        ?>
-        <script>
-            alert("Thank you for being a part of us!","Book Buddy")
-            window.location.href='login.php'
-        </script>
-        <?php
         }else{
         ?>
         <script>
-            alert("Failed to Sign up! Try Again")
-            window.location.href='index.php'
+            alert("Failed to Login.Please Try Again");
+            window.location.href='login.php';
         </script>
         <?php
         }
-    }       
+    }elseif(isset($_POST['admin'])){
+        //1.processing data if button is clicked 
+        $username1=$_POST["username1"];
+        $email1=$_POST["email1"];
+        $password1=$_POST["password1"];
+        //2.SQL Query to save data into database
+        $sql1="SELECT * FROM tbl_admin WHERE e_mail='$email1' AND pass_word='$password1' ";
+        
+        //3.executing and saving data in database
+        $res1= mysqli_query($conn,$sql1);
+
+        //4.checking if we have inserted the data
+        if($res1==True){
+            $count1=mysqli_num_rows($res1);
+            if($count1==1){
+                $_SESSION['user1']=$username1;
+                while($row1=mysqli_fetch_assoc($res1)){
+                    $id1=$row1['id'];
+                    ?>
+                <script>
+                    window.location.href="admin/index.php?id=<?php echo $id1; ?>";
+                </script>
+                <?php
+                break;
+                }
+            }else{
+                ?>
+                <script>
+                    alert("No such Admin Exist");
+                    window.location.href='index.php';
+                </script>
+                <?php
+            }
+            //echo "Data Inserted";
+            //redirecting page to manage admin
+        }else{
+        ?>
+        <script>
+            alert("Failed to Login.Please Try Again");
+            window.location.href='login.php';
+        </script>
+        <?php
+        }
+    }
 ?>
 </html>
