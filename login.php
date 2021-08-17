@@ -188,7 +188,7 @@
                     $id1=$row1['id'];
                     ?>
                 <script>
-                    window.location.href="admin/index.php?id=<?php echo $id1; ?>";
+                    window.location.href="admin/index.php?id1=<?php echo $id1; ?>";
                 </script>
                 <?php
                 break;
