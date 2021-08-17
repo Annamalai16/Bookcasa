@@ -56,14 +56,14 @@
 <body>
     <div class="header">
         <div class="header-left">
-            <a href="home.php?id=<?php echo $id; ?>" style="text-decoration:none;color:white;"><img src="images/logo.png" alt="" />ARTS SCHOOL</a>
+            <a href="home.php?id=<?php echo $id; ?>" style="text-decoration:none;color:white;"><img src="images/logo.png" alt="" />BOOKCASA</a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>
             <nav class="cl-effect-11" id="cl-effect-11" style="margin-left:18%;">
                 <ul class="nav1">
-                    <li><a class="scroll" href="#" data-hover="ORDERHISTORY" onclick="window.location.href='orderhistory.php'">ORDERHISTORY</a></li>
-                    <li><a class="scroll" href="#" data-hover="MYCART" onclick="window.location.href='mycart.php'">MYCART</a></li>
+                    <li><a class="scroll" href="#" data-hover="ORDERHISTORY" onclick="window.location.href='orderhistory.php?id=<?php echo $id;?>'">ORDERHISTORY</a></li>
+                    <li><a class="scroll" href="#" data-hover="MYCART" onclick="window.location.href='mycart.php?id=<?php echo $id;?>'">MYCART</a></li>
                     <li><a class="scroll" href="#" data-hover="LOGOUT" onclick="window.location.href='logout.php'" style="margin-right:0px;">LOGOUT</a></li>
                     <li style="float:right !important;padding-right:2%;"><i class='far fa-user-circle' style='font-size:24px;color:white;'></i><a class="scroll" href="#" data-hover="&nbsp;<?php echo $_SESSION['user']; ?>" style="margin-right:0px;margin-left:0px;">&nbsp;<?php echo $_SESSION['user']; ?></a></li>
                 </ul>

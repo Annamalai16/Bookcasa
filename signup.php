@@ -48,7 +48,7 @@
 <body>
     <div class="header">
         <div class="header-left">
-            <a href="index.php"><img src="images/logo.png" alt=""/>ARTS SCHOOL</a>
+            <a href="index.php"><img src="images/logo.png" alt=""/>BOOKCASA</a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>

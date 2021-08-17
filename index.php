@@ -47,7 +47,7 @@
 <body>
 <div class="header">
         <div class="header-left">
-            <a href="index.html"><img src="images/logo.png" alt="" /><span>ARTS</span> SCHOOL</a>
+            <a href="index.html"><img src="images/logo.png" alt="" /><span> BOOKCASA </a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>
@@ -105,8 +105,8 @@
 
                         <div class="container">
                             <div class="banner-info">
-                                <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
-                                <h4><span>ARTS</span> SCHOOL</h4>
+                                <h3>KNOWLEDGE&nbsp|<span></span> HARD WORK&nbsp|<span>|</span>INTELLIGENCE&nbsp|</h3>
+                                <h4>Your House of books</h4>
                                 <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'signup.php'">Sign Up</button></p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="container">
                             <div class="banner-info">
                                 <h3>KNOWLEDGE <span>|</span> HARD WORK <span>|</span> INTELLIGENCE</h3>
-                                <h4><span>ARTS</span> SCHOOL</h4>
+                                <h4>Your House of books</h4>
                                 <p><button style="background:none;outline:none;border:none;" onclick="window.location.href = 'signup.php'">Sign Up</button></p>
                             </div>
                         </div>
@@ -133,9 +133,8 @@
     <div class="welcome">
         <div class="container">
             <div class="welcome-head">
-                <h3>WELCOME</h3>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
-                    rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <h3>WHY BOOKCASA? </h3>
+                <p>The year 2020 has brought a new revolution in the field of education. The traditional teaching methods have come for a pause and online teaching is soaring up the skies. Online classes have a lot of advantages but one major drawback is the unavailability of hardcopy books. Though eBooks are plenty and always available online, it fails to give the satisfaction of holding the books and learning. Also, reading online always can cause a lot of stress on an individual’s eyes too. So what we do here at Bookcasa is that, we make sure to find your book from any part of the world and deliver it at your place.</p>
             </div>
         </div>
     </div>
@@ -149,10 +148,8 @@
                     <img src="images/1.jpg" alt=" " class="img-responsive" />
                 </div>
                 <div class="col-md-6 about-grid-left">
-                    <h4>eum fugiat quo voluptas nulla pariatur</h4>
-                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<span>Temporibus autem quibusdam et aut officiis debitis 
-						aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
-						molestiae non recusandae.</span></p>
+                    <h4>What makes us Special</h4>
+                    <p>Bookcasa is a platform to find all books you need. Books of various genres and study streams are available on our website. All you have to do is register yourself on our website and search for the books you require. Place your order and your books will be delivered within the estimated time. <span>People from all over the world can place orders online on any books available in any part of the world and we make sure to deliver it without fail with utmost care. </span></p>
                     <div class="about-grid-left-grids">
                         <div class="about-grid-left-grid">
                             <img src="images/2.jpg" alt=" " class="img-responsive" />
@@ -182,8 +179,8 @@
                         <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
-                        <h4>cum soluta nobis est eligendi optio cumque nihil cons</h4>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <h4>Fastest delivery</h4>
+                        <p>Our team works for the fastest delivery as we realise the position of our customers.</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -192,7 +189,7 @@
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     </div>
                     <div class="servc-grid-right">
-                        <h4>cum soluta nobis est eligendi optio cumque nihil cons</h4>
+                        <h4>Supreme packaging care</h4>
                         <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
                     </div>
                     <div class="clearfix"> </div>
