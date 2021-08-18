@@ -21,7 +21,7 @@
                             $price2=$row2['price'];
                         ?>
                         <div class="catalog">
-                            <img src="images/uploadedBooks/<?php echo $image2; ?>" alt="<?php echo $name; ?>"></img>
+                            <img src="images/uploadedBooks/<?php echo $image2; ?>" alt="<?php echo $name2; ?>"></img>
                             <ul>
                                 <li><h5><?php echo $name2; ?></h5></li>
                                 <li><section>By:<?php echo  $author2; ?></section></li>
