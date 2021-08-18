@@ -11,8 +11,6 @@
                 <th>AUTHOR</th>
                 <th>PRICE</th>
                 <th>ORDER DATE</th>
-                <th>STATUS</th>
-                <th>ACTIONS</th>
             </tr>
             <?php 
         
@@ -37,25 +35,6 @@
                             <td><?php echo $author; ?></td>
                             <td><?php echo $price ; ?></td>
                             <td><?php echo $date; ?></td>
-                            <td>
-                                <?php
-                                    if($status=="Ordered"){
-                                        echo "<div style='color:#130f40;'>Ordered</div>";
-                                    }
-                                    else if($status=="On Delivery"){
-                                        echo "<div style='color:#f0932b;'>On Delivery</div>";
-                                    }
-                                    else if($status=="Delivered"){
-                                        echo "<div style='color:#6ab04c;'>Delivered</div>";
-                                    }
-                                    else if($status=="Cancelled"){
-                                        echo "<div style='color:#eb4d4b;'>Cancelled</div>";
-                                    }
-                                
-                                ?>
-                            </td>
-                            <td> <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>" class="btn-secondary">UpdateOrder</a>
-                            </td>
                         </tr>
                     <?php
                     
