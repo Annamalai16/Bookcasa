@@ -1,3 +1,4 @@
+<?php include('partials/menu.php'); ?>
 <head>
     <link href="styles.css" rel="stylesheet">
     <style>
@@ -38,5 +39,6 @@
         $imageName = $name.".jpg";
         $insertSQL = "INSERT INTO category VALUES ('$name','$imageName')";
         $conn->query($insertSQL);
+        header("Refresh:0;url=index.php");
     }
 ?> 

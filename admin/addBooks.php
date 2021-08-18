@@ -16,13 +16,13 @@
                     }
                 } ?>
             </select>
-            <br><br>
+            <br>
             <input type="text" name="bookname" placeholder="Book Name" style="margin-left: 5px;" class="input-field" required>
-            <br><br>
+            <br>
             <input type="text" name="author" placeholder="Author" style="margin-left: 5px;" class="input-field" required>
-            <br><br>
+            <br>
             <input type="number" name="price" placeholder="Price" style="margin-left: 5px;" class="input-field" required>
-            <br><br>
+            <br>
             <input type="file" name="image" placeholder="Image" style="margin-left: 5px;" class="input-field" required>
             <br><br>
             <input type="submit" name="Create" class="submit-btn">
@@ -44,6 +44,7 @@
         $imageName = $name.".jpg";
         $insertSQL = "INSERT INTO books VALUES ('$category','$name','$author','$imageName','$price')";
         $conn->query($insertSQL);
+        header("Refresh:0;url=index.php");
     }
 ?> 
 <?php include('partials/footer.php'); ?>

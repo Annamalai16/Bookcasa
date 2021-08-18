@@ -58,6 +58,8 @@
             </script>
         <?php 
         }
-        //header("Refresh:0;url=index.php");
+        $sql = "UPDATE books SET category='$name' WHERE category='$temp';";
+        $result = $conn->query($sql);
+        header("Refresh:0;url=index.php");
     }
 ?> 
