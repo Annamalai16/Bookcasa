@@ -87,6 +87,11 @@
             </script>
         <?php 
         }
-        header("Refresh:0;url=index.php");
+        ?>
+        <meta http-equiv = "refresh" content = "0; url = ./index.php?id=<?php echo $id; ?>" />
+    <?php 
     }
 ?> 
+
+<br><br><br>
+<?php include('partials/footer.php'); ?>

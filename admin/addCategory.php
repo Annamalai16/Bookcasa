@@ -38,7 +38,11 @@
         move_uploaded_file($source ,$destination);
         $imageName = $name.".jpg";
         $insertSQL = "INSERT INTO category VALUES ('$name','$imageName')";
-        $conn->query($insertSQL);
-        header("Refresh:0;url=index.php");
+        $conn->query($insertSQL);?>
+        <meta http-equiv = "refresh" content = "0; url = ./index.php?id=<?php echo $id; ?>" />
+        <?php 
     }
 ?> 
+
+<br><br><br>
+<?php include('partials/footer.php'); ?>

@@ -49,8 +49,8 @@
 
 .effect {
     background-position: center;
-    width: 5px !important;
-    height: 5px !important;
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 15px;
 }
 
