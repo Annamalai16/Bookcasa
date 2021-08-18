@@ -1,6 +1,6 @@
 <?php include('partials/menu.php'); ?>
 <div class="container-fluid" style="background-image: url('./Images/addBook.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;width:100%;height:100%;top:0;left:0;">
-    <div class="input-container" style="margin-top:4%">
+    <div class="input-container" style="margin-top:2%">
         <form action="addBooks.php" method="post" enctype="multipart/form-data">
             <h1 style="text-align: center;font-size: 120%; color: whitesmoke;">ADD BOOK</h1>
             <br>
@@ -24,7 +24,7 @@
             <input type="number" name="price" placeholder="Price" style="margin-left: 5px;" class="input-field" required>
             <br>
             <input type="file" name="image" placeholder="Image" style="margin-left: 5px;" class="input-field" required>
-            <br><br>
+            <br>
             <input type="submit" name="Create" class="submit-btn">
         </form>
     </div>

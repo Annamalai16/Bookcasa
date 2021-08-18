@@ -17,7 +17,7 @@
         die("Connection Failed:".$conn->connect_error);
     }
 ?>
-<div class="input-container" style="margin-top:10%">
+<div class="input-container" style="margin-top:5%">
     <form action="addCategory.php" method="post" enctype="multipart/form-data">
         <h1 style="text-align: center;font-size: 120%; color: whitesmoke;">ADD CATEGORY</h1>
         <br>

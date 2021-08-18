@@ -14,7 +14,13 @@
     $image = $bookRow['image'];
     date_default_timezone_set("Asia/kolkata");
     $currentDate = date("Y/m/d");
-    $insert = "INSERT INTO orders VALUES('$id','$name','$author','$image','$price','$currentDate')";
-      
+    $status = "Ordered";
+    $insert = "INSERT INTO orders VALUES('$id','$name','$author','$image','$price','$currentDate','$status');";
+    if($conn->query($insert)) 
 ?>
 <meta http-equiv = "refresh" content = "0; url = ./orderHistory.php?id=<?php echo $id; ?>" />
+<?php else {
+    echo "NOT BOUGHT";
+    <meta http-equiv = "refresh" content = "3; url = ./home.php?id=<?php echo $id; ?>" />
+}
+
