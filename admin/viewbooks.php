@@ -1,7 +1,9 @@
 <?php include('partials/menu.php'); ?>
 <?php
+    if(isset($_GET['id']) and isset($_GET['category_name'])) {
     $id=$_GET['id'];
     $category=$_GET['category_name'];
+    }
 ?>
 
 <div class="container-fluid" style="margin-left:7%;">
