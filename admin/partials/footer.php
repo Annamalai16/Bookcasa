@@ -1,4 +1,4 @@
-<div class="copy-right">
+<div class="copy-right" style="position:fixed;left:0;right:0;bottom:0;">
         <div class="container">
             <p> &copy; All rights reserved.Designed by Team <a href="https://github.com/Annamalai16/library"> GT202</a></p>
         </div>
