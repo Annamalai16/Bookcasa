@@ -130,3 +130,43 @@
 
 
 /*book end*/
+/*manage -order*/
+.manage-order{
+    width:100%;
+    margin: 1% 5% 0 0;
+    border-collapse:collapse;
+    font-size:10px;
+}
+.manage-order tr th{
+    border:1px solid black;
+    text-align:center  !important;
+    width:auto;
+    PADDING:10PX;
+    font-family: "Times New Roman", Times, serif;
+}
+.manage-order  tr td{
+    padding:1%;
+    text-align:center;
+    font-size:medium;
+    font-family: "Times New Roman", Times, serif;
+}
+/*manage order ends*/
+/*order buttons*/
+.btn-secondary{
+    background-color:#00b894;
+    text-align:left;
+    text-decoration:none;
+    border:1px solid black;
+    border-radius:15px;
+    font-weight:bold;
+}
+.btn-secondary:hover{
+    background-color:#fdcb6e;
+}
+.success{
+    color:#00b894;
+}
+.failure{
+    color:#d63031;
+}
+/*order button ends*/
