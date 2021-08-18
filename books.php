@@ -14,21 +14,20 @@
                     $count2=mysqli_num_rows($res2);
                     if($count2>0){
                         while($row2=mysqli_fetch_assoc($res2)){
-                            $name=$row2['name'];
-                            $author=$row2['author'];
-                            $image=$row2['image'];
-                            $price=$row2['price'];
+                            $name2=$row2['name'];
+                            $author2=$row2['author'];
+                            $image2=$row2['image'];
+                            $price2=$row2['price'];
                         ?>
                         <div class="catalog">
-                            <img src="images/uploadedBooks/<?php echo $image; ?>" alt="<?php echo $name; ?>"></img>
+                            <img src="images/uploadedBooks/<?php echo $image2; ?>" alt="<?php echo $name; ?>"></img>
                             <ul>
-                                <li><h5><?php echo $name; ?></h5></li>
-                                <li><section>By:<?php echo  $author; ?></section></li>
-                                <li><p>&#8377;<?php echo $price; ?></p></li>
+                                <li><h5><?php echo $name2; ?></h5></li>
+                                <li><section>By:<?php echo  $author2; ?></section></li>
+                                <li><p>&#8377;<?php echo $price2; ?></p></li>
                                 <li>
-                                    <a href="<?php echo SITEURL; ?>order.php?id=<?php echo $id; ?>&name=<?php echo $name; ?>"><button type="submit" style="background-color:#10ac84;">Buy&nbsp;<i class='fas fa-shopping-bag' style='font-size:24px'></i></button></a>
-                                    <a href="<?php echo SITEURL; ?>mycart.php?id=<?php echo $id; ?>&name=<?php echo $name; ?>"><button type="submit" style="background-color:#ff5252;">Wishlist&nbsp;&#9825;</button></a>
-                                </li>
+                                    <a href="<?php echo SITEURL; ?>order.php?id=<?php echo $id; ?>&name=<?php echo $name2; ?>"><button type="submit" style="background-color:#10ac84;">Buy&nbsp;<i class='fas fa-shopping-bag' style='font-size:24px'></i></button></a>
+                                    <a href="<?php echo SITEURL; ?>wishlist.php?id=<?php echo $id; ?>&name=<?php echo $name2; ?>&author=<?php echo $author2; ?>&image=<?php echo $image2; ?>&price=<?php echo $price2; ?>"><button type="submit" style="background-color:#d63031;">Wishlist&nbsp;&#9825;</button></a></li>
                             </ul>
                         </div><br>
                         <?php
@@ -47,6 +46,6 @@
                     <?php
                 }
             ?>
-            </div>
+        </div>
 </div>
 <?php include('partials-front/footer.php'); ?>
