@@ -1,5 +1,4 @@
 <?php include('partials/menu.php'); ?>
-
 <div class="container-fluid" style="margin-left:7%;">
     <h2 style="margin-left:27%;padding-top:70px;font-family: 'Righteous', cursive;font-size:30px;margin-bottom:5%;">Explore Our Wide Range Of Collections</h2>
         <?php
@@ -13,7 +12,7 @@
                         $image=$row['image'];
                     ?>
                     <div id="images">
-                        <a href="viewbooks.php?category_name=<?php echo $name; ?>&id=<?php echo $id; ?>">
+                        <a href="viewbooks.php?category_name=<?php echo $name; ?>">
                             <img class="effect" src="<?php echo SITEURL; ?>images/uploadedCategories/<?php echo $image; ?>" alt="<?php echo $name; ?>" >
                             <p id="imgcontent"><?php echo $name; ?></p>
                         </a>

@@ -1,16 +1,9 @@
 <?php include('../config/constants.php')?>
-<?php 
-    include('login-check.php');
-    if(!isset($_GET['id'])){
-        header('location:'.SITEURL.'index.php');
-    }else{
-        $id=$_GET['id'];
-    }
-?>
+<?php include('login-check.php');?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Admin</title>
     <!--fonts-->
     <link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -60,17 +53,17 @@
 <body>
     <div class="header">
         <div class="header-left">
-            <a href="index.php?id=<?php echo $id; ?>" style="text-decoration:none;color:white;"><img src="../images/logo.png" alt="" />BOOKCASA</a>
+            <a href="index.php" style="text-decoration:none;color:white;"><img src="../images/logo.png" alt="" />BOOKCASA</a>
         </div>
         <div class="header-right">
             <span class="menu"><img src="images/menu.png" alt=""/></span>
             <nav class="cl-effect-11" id="cl-effect-11" style="margin-left:18%;">
                 <ul class="nav1">
-                    <li><a class="scroll" href="#" data-hover="ORDERS" onclick="window.location.href='orders.php?id=<?php echo $id; ?> '">ORDERS</a></li>
-                    <li><a class="scroll" href="#" data-hover="ADDBOOKS" onclick="window.location.href='addBooks.php?id=<?php echo $id; ?> '">ADDBOOKS</a></li>
-                    <li><a class="scroll" href="#" data-hover="ADDCATEGORY" onclick="window.location.href='addCategory.php?id=<?php echo $id; ?>'">ADDCATEGORY</a></li>
+                    <li><a class="scroll" href="#" data-hover="ORDERS" onclick="window.location.href='orders.php'">ORDERS</a></li>
+                    <li><a class="scroll" href="#" data-hover="ADDBOOKS" onclick="window.location.href='addBooks.php'">ADDBOOKS</a></li>
+                    <li><a class="scroll" href="#" data-hover="ADDCATEGORY" onclick="window.location.href='addCategory.php'">ADDCATEGORY</a></li>
                     <li><a class="scroll" href="#" data-hover="LOGOUT" onclick="window.location.href='logout.php'" style="margin-right:0px;">LOGOUT</a></li>
-                    <li style="float:right !important;padding-right:2%;"><i class='far fa-user-circle' style='font-size:24px;color:white;'></i><a class="scroll" href="#" data-hover="&nbsp;<?php echo $_SESSION['user1']; ?>" style="margin-right:0px;margin-left:0px;">&nbsp;<?php echo $_SESSION['user1']; ?></a></li>
+                    <li style="float:right !important;padding-right:2%;"><i class='far fa-user-circle' style='font-size:24px;color:white;'></i><a class="scroll" href="#" data-hover="&nbsp;<?php echo $_SESSION['user']; ?>" style="margin-right:0px;margin-left:0px;">&nbsp;<?php echo $_SESSION['user']; ?></a></li>
                 </ul>
             </nav>
             <!-- script for menu -->

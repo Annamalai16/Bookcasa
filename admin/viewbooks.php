@@ -1,7 +1,6 @@
 <?php include('partials/menu.php'); ?>
 <?php
-    if(isset($_GET['id']) and isset($_GET['category_name'])) {
-    $id=$_GET['id'];
+    if(isset($_GET['category_name'])) {
     $category=$_GET['category_name'];
     }
 ?>

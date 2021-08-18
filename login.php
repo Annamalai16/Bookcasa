@@ -183,7 +183,7 @@
         if($res1==True){
             $count1=mysqli_num_rows($res1);
             if($count1==1){
-                $_SESSION['user1']=$username1;
+                $_SESSION['user']=$username1;
                 while($row1=mysqli_fetch_assoc($res1)){
                     $id=$row1['id'];
                     ?>
