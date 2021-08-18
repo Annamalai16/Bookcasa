@@ -2,6 +2,7 @@
 <?php
     $id=$_GET['id'];
     $category=$_GET['category_name'];
+    $_SESSION['gid']=$id;
 ?>
 <div class="container-fluid" style="margin-left:7%;">
     <h2 style="margin:auto !important;dispaly:block;padding-top:70px;font-family: 'Righteous', cursive;font-size:30px;margin-bottom:5%;"><?php echo $category; ?>.</h2>
