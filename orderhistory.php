@@ -40,7 +40,6 @@
                 <th>AUTHOR</th>
                 <th>PRICE</th>
                 <th>ORDER DATE</th>
-                <th>STATUS</th>
             </tr>
             <?php 
         
@@ -57,7 +56,6 @@
                         $author= $row['author'];
                         $price= $row['price'];
                         $date=$row['date'];   //date year-month-date hour-minute-sec-am/pm
-                        $status=$row['status']; 
                     ?>
                         <tr>
                             <td><img src="<?php echo SITEURL;?>images/uploadedBooks/<?php echo $image;?>" alt="image added" width=80px></td>
@@ -65,23 +63,6 @@
                             <td><?php echo $author; ?></td>
                             <td><?php echo $price ; ?></td>
                             <td><?php echo $date; ?></td>
-                            <td>
-                                <?php
-                                    if($status=="Ordered"){
-                                        echo "<div style='color:#130f40;'>Ordered</div>";
-                                    }
-                                    else if($status=="On Delivery"){
-                                        echo "<div style='color:#f0932b;'>On Delivery</div>";
-                                    }
-                                    else if($status=="Delivered"){
-                                        echo "<div style='color:#6ab04c;'>Delivered</div>";
-                                    }
-                                    else if($status=="Cancelled"){
-                                        echo "<div style='color:#eb4d4b;'>Cancelled</div>";
-                                    }
-                                
-                                ?>
-                            </td>
                         </tr>
                     <?php
                     

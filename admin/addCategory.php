@@ -12,7 +12,7 @@
 </head>
 
 <?php 
-    $conn = $conn = mysqli_connect("localhost","root","","bookorder");
+    $conn = mysqli_connect("localhost","root","","bookorder");
     if($conn->connect_error) {
         die("Connection Failed:".$conn->connect_error);
     }
@@ -39,7 +39,8 @@
         $imageName = $name.".jpg";
         $insertSQL = "INSERT INTO category VALUES ('$name','$imageName')";
         $conn->query($insertSQL);?>
-        <meta http-equiv = "refresh" content = "0; url = ./index.php?id=<?php echo $id; ?>" />
+        <?php echo $id; ?>
+        <meta http-equiv = "refresh" content = "0; url = ../admin/index.php?id=<?php echo $id; ?>" />
         <?php 
     }
 ?> 
