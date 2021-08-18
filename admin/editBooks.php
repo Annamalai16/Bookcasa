@@ -1,3 +1,4 @@
+<?php include('partials/menu.php'); ?>
 <head>
     <link href="styles.css" rel="stylesheet">
     <style>
@@ -42,15 +43,15 @@
                 }
             } ?>
         </select>
-        <br><br>
+        <br>
         <input type="text" name="bookname" placeholder="Book Name" value="<?php echo $row1['name']; ?>" style="margin-left: 5px;" class="input-field">
-        <br><br>
+        <br>
         <input type="text" name="author" placeholder="Author" value="<?php echo $row1['author']; ?>" style="margin-left: 5px;" class="input-field">
-        <br><br>
+        <br>
         <input type="number" name="price" placeholder="Price" value="<?php echo $row1['price']; ?>" style="margin-left: 5px;" class="input-field">
-        <br><br>
+        <br>
         <input type="file" name="image" placeholder="Image" style="margin-left: 5px;" class="input-field">
-        <br><br>
+        <br>
         <input type="submit" name="Create" class="submit-btn">
     </form>
 </div>
@@ -79,7 +80,7 @@
             $sql = "UPDATE books SET image = '$imageName' WHERE name='$temp'";
             $conn->query($sql);
         }
-        $sql = "UPDATE books SET category = '$category', name = '$name', author = '$author', price = '$price' WHERE name = $temp";
+        $sql = "UPDATE books SET category = '$category', name = '$name', author = '$author', price = '$price' WHERE name = '$temp'";
         $result = $conn->query($sql);
         if(!$result){?> 
             <script>

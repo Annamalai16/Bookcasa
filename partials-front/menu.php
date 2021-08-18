@@ -1,6 +1,7 @@
 <?php include('config/constants.php')?>
 <?php include('login-check.php');?>
 <?php
+    if(isset($_GET['id']))
     $id=$_GET['id'];
 ?>
 <!DOCTYPE html>
