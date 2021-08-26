@@ -2,7 +2,7 @@
 <div class="container-fluid" style="background-image: url('./Images/addBook.jpg');background-repeat: no-repeat;background-size:cover;background-position:center;height:100%;width:100%;height:85vh;">
     <br><br><br>
     <div class="input-container" style="margin-top:2%">
-        <form action="addCategory.php" method="post" enctype="multipart/form-data">
+        <form action="addBooks.php" method="post" enctype="multipart/form-data">
             <h1 style="text-align: center;font-size: 120%; color: whitesmoke;">ADD BOOK</h1>
             <br>
             <select class="input-field" name="category" required>
@@ -41,6 +41,7 @@
             move_uploaded_file($source ,$destination);
             $imageName = $name.".jpg";
             $sql = "INSERT INTO books SET category='$category',name='$name',author='$author',image='$imageName',price='$price'";
+            $res = $conn->query($sql);
             if($res==true){
                 ?>
                 <script>
